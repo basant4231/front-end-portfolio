@@ -1,0 +1,81 @@
+/* Footer Section Styling */
+.footer {
+    background-color: #222; /* Darker background for contrast with body */
+    color: #f4f4f4;
+    padding: 40px 0 20px 0; /* Top, right/left, bottom padding */
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Subtle top shadow */
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-social-links {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Space between icons */
+}
+
+.footer-social-links a {
+    font-size: 1.8em; /* Size of social icons */
+    color: #f4f4f4; /* Light color for icons */
+    transition: all 0.3s ease;
+    width: 50px; /* Fixed width/height for circular effect */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f4f4f4; /* Border around icons */
+    border-radius: 50%; /* Make them circular */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-social-links a:hover {
+    color: #222; /* Darker text on hover */
+    background-color: #00bcd4; /* Accent color fill on hover */
+    border-color: #00bcd4; /* Accent color border on hover */
+    transform: translateY(-5px) scale(1.1); /* Lift and slightly enlarge on hover */
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4); /* Glow effect */
+}
+
+.footer-text, .footer-credits {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer-credits a {
+    color: #00bcd4; /* Accent color for links in credits */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-credits a:hover {
+    color: #f4f4f4; /* Lighter color on hover */
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 0 15px 0;
+    }
+    .footer-social-links {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    .footer-social-links a {
+        font-size: 1.5em;
+        width: 40px;
+        height: 40px;
+    }
+    .footer-text, .footer-credits {
+        font-size: 0.85em;
+    }
+}

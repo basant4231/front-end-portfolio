@@ -1,0 +1,132 @@
+/* Basic Reset & Body Styles (Optional, but good for consistency) */
+/* You might want to move body styles to a global CSS file */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Container */
+.navbar {
+    background-color: #333; /* Dark background */
+    padding: 15px 0;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky; /* Keeps navbar at the top when scrolling */
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.navbar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Horizontal padding */
+}
+
+/* Logo Styling */
+.navbar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease
+
+}
+
+.navbar .logo:hover {
+    color: #00bcd4; /* Accent color on hover */
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 30px; /* Space between links */
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #00bcd4; /* Accent color on hover */
+}
+
+/* Underline effect on hover */
+.navbar .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #00bcd4; /* Accent color */
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Mobile Menu Toggle (Hidden by default on desktop) */
+.navbar .menu-toggle {
+    display: none; /* Hide on larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.navbar .menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none; /* Hide nav links by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .navbar .nav-links.active {
+        display: flex; /* Show when active */
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 20px;
+    }
+
+    .navbar .menu-toggle {
+        display: block; /* Show menu toggle on small screens */
+    }
+
+    .navbar .container {
+        padding: 0 15px;
+    }
+}

@@ -1,0 +1,146 @@
+/* Services Section Styles */
+.services-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.7;
+}
+
+.services-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services-heading {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+    position: relative;
+}
+
+.services-heading::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #00bcd4; /* Accent color */
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+.services-intro {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for cards */
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 5px solid transparent; /* For hover effect */
+}
+
+.service-card:hover {
+    transform: translateY(-8px); /* Lift on hover */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    border-bottom-color: #00bcd4; /* Accent border on hover */
+}
+
+.service-icon {
+    font-size: 3.5em; /* Size of the icon */
+    color: #00bcd4; /* Accent color for icons */
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    color: #0097a7; /* Slightly darker accent on hover */
+}
+
+.service-card h2 {
+    font-size: 1.8em;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1.05em;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center feature tags */
+}
+
+.service-features li {
+    display: inline-block; /* Display as tags */
+    background-color: #eef7f8; /* Light background for feature tags */
+    color: #00bcd4;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 20px; /* Pill shape */
+    font-size: 0.9em;
+    border: 1px solid #cceeff;
+}
+
+.services-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.services-cta p {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Reusing .btn, .primary-btn from Home.css */
+/* Make sure these are globally available or imported in App.css */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .services-heading {
+        font-size: 2.5em;
+    }
+    .services-intro {
+        font-size: 1em;
+        margin-bottom: 40px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+    .service-card {
+        padding: 25px;
+    }
+    .service-icon {
+        font-size: 3em;
+    }
+    .service-card h2 {
+        font-size: 1.6em;
+    }
+    .services-cta p {
+        font-size: 1.2em;
+    }
+}

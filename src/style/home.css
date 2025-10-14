@@ -1,0 +1,177 @@
+/* Home Section Styling */
+.home-section {
+    background-color: #f8f8f8; /* Light background for contrast */
+    padding: 80px 0; /* Vertical padding */
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 70px); /* Adjust based on navbar height, makes it full height */
+    text-align: center; /* Default for mobile, overridden for desktop */
+}
+
+.home-section .container {
+    display: flex;
+    flex-direction: column; /* Stack content on mobile */
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 40px; /* Space between content and image */
+}
+
+.home-content {
+    text-align: center; /* Center text for smaller screens */
+    flex: 1;
+}
+
+.home-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.home-content h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.home-content .highlight {
+    color: #00bcd4; /* Accent color */
+}
+
+.home-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 30px auto; /* Center paragraph and add bottom margin */
+}
+
+.action-buttons {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.primary-btn {
+    background-color: #00bcd4; /* Accent color */
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #0097a7; /* Darker accent */
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: #00bcd4; /* Accent color */
+    border: 2px solid #00bcd4;
+}
+
+.secondary-btn:hover {
+    background-color: #00bcd4;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Space between icons */
+}
+
+.social-links a {
+    font-size: 2.2em; /* Size of social icons */
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #00bcd4; /* Accent color on hover */
+    transform: translateY(-3px);
+}
+
+/* Home Image Styling */
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image img {
+    max-width: 350px; /* Max width of your profile image */
+    height: auto;
+    border-radius: 50%; /* Make it round */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Soft shadow */
+    object-fit: cover; /* Ensures image fills without distortion */
+    border: 5px solid #fff; /* White border */
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .home-section .container {
+        flex-direction: row; /* Side-by-side on larger screens */
+        text-align: left;
+    }
+
+    .home-content {
+        text-align: left; /* Align text left on larger screens */
+    }
+
+    .home-content p {
+        margin: 0 0 30px 0; /* Reset margins for left alignment */
+    }
+
+    .action-buttons {
+        justify-content: flex-start; /* Align buttons left */
+    }
+
+    .social-links {
+        justify-content: flex-start; /* Align social icons left */
+    }
+
+    .home-image {
+        order: 2; /* Put image on the right */
+        margin-left: 40px; /* Space from content */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 2.5em;
+    }
+    .home-content h2 {
+        font-size: 1.5em;
+    }
+    .home-content p {
+        font-size: 1em;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .social-links a {
+        font-size: 1.8em;
+    }
+    .home-image img {
+        max-width: 250px;
+    }
+}

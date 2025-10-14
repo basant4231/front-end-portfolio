@@ -1,0 +1,206 @@
+/* About Section Styles */
+.about-section {
+    padding: 80px 0;
+    background-color: #fcfcfc;
+    color: #333;
+    line-height: 1.7;
+}
+
+.about-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-heading {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #222;
+    position: relative;
+}
+
+.about-heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #00bcd4; /* Accent color */
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Updated about-content for no image */
+.about-content {
+    display: flex; /* Still use flex for consistent layout, but now just a single column of text */
+    flex-direction: column;
+    align-items: center; /* Center the column of text */
+    gap: 40px;
+}
+
+/* Remove image-specific styling */
+/*
+.about-image-wrapper { ... }
+.about-image { ... }
+*/
+
+.about-text-wrapper {
+    flex-grow: 1;
+    width: 100%; /* Ensure text takes full width available within container */
+    max-width: 800px; /* Optional: Constrain text width for readability */
+    text-align: center; /* Center text by default on all screens */
+}
+
+.intro-paragraph {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.about-content h2 {
+    font-size: 2.2em;
+    color: #222;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    text-align: center; /* Center headings */
+}
+
+.about-content h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Center sub-headings */
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555;
+    text-align: center; /* Center paragraphs */
+}
+
+.highlight {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+/* Skills Grid (adjust if text-align needs override) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+    text-align: left; /* Keep skill category text aligned left within its box */
+}
+
+.skill-category {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-top: 5px solid #00bcd4;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category li {
+    background-color: #eef;
+    color: #333;
+    padding: 8px 12px;
+    margin: 8px 5px 8px 0;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 0.95em;
+    border: 1px solid #d0d0f0;
+}
+
+/* Values List */
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    max-width: 600px; /* Constrain list width for readability */
+    margin-left: auto;
+    margin-right: auto; /* Center the list */
+    text-align: left; /* Keep list items aligned left */
+}
+
+.values-list li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.values-list li strong {
+    color: #00bcd4;
+}
+
+.values-list li::before {
+    content: '✓';
+    color: #00bcd4;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Call to Action */
+.about-cta {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.about-cta p {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Responsive adjustments */
+/* Remove media query rules for image positioning */
+@media (min-width: 768px) {
+    /* No flex-direction: row; for about-content anymore */
+    /* .about-content {
+        flex-direction: column;
+        align-items: center;
+    } */
+    .about-text-wrapper {
+        text-align: center; /* Keep text centered on larger screens too */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-heading {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+    }
+    .intro-paragraph {
+        font-size: 1.1em;
+    }
+    .about-content h2 {
+        font-size: 1.8em;
+        margin-top: 30px;
+    }
+    .about-content h3 {
+        font-size: 1.3em;
+    }
+    .skill-category li {
+        padding: 6px 10px;
+        margin: 6px 4px 6px 0;
+        font-size: 0.9em;
+    }
+    .about-cta p {
+        font-size: 1.2em;
+    }
+}
