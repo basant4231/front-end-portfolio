@@ -93,23 +93,23 @@ const Contact = () => {
                         <h2>Contact Details</h2>
                         <div className="info-item">
                             <FontAwesomeIcon icon={faEnvelope} className="info-icon" />
-                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            <a href="mailto:basantsharam21@gmail.com">basantsharam21@gmail.com</a>
                         </div>
                         <div className="info-item">
                             <FontAwesomeIcon icon={faPhone} className="info-icon" />
-                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            <a href="tel:+9368402312">+1 (234) 567-890</a>
                         </div>
                         <div className="info-item">
                             <FontAwesomeIcon icon={faMapMarkerAlt} className="info-icon" />
-                            <span>Your City, Your Country</span>
+                            <span>Jewar, India</span>
                         </div>
 
                         <h2>Let's Connect</h2>
                         <div className="contact-social-links">
-                            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/basant-sharma-149918330" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <FontAwesomeIcon icon={faLinkedinIn} />
                             </a>
-                            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <a href="https://github.com/basant4231" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
                             <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="Twitter">

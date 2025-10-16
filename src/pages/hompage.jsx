@@ -7,21 +7,20 @@ const Home = () => {
         <section className="home-section" id="home">
             <div className="container">
                 <div className="home-content">
-                    <h1>Hi, I'm <span className="highlight">Your Name</span></h1>
-                    <h2>A Passionate <span className="highlight">[Your Profession/Role]</span></h2>
+                    <h1>Hi, I'm <span className="highlight">Basant Sharma</span></h1>
+                    <h2>A Passionate <span className="highlight">Web Developer</span></h2>
                     <p>
-                        A brief, engaging sentence or two about yourself.
-                        For example: "I specialize in creating dynamic and user-friendly web experiences with a focus on modern JavaScript frameworks. I love bringing ideas to life through code and design."
+                    I specialize in creating dynamic and user-friendly web experiences with a focus on modern JavaScript frameworks. I love bringing ideas to life through code and design.
                     </p>
                     <div className="action-buttons">
                         <a href="./contact" className="btn primary-btn">Contact Me</a>
                         <a href="./portfolio" className="btn secondary-btn">View My Work</a>
                     </div>
                     <div className="social-links">
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/basant-sharma-149918330" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-linkedin"></i> {/* Font Awesome icon */}
                         </a>
-                        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/basant4231" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-github"></i> {/* Font Awesome icon */}
                         </a>
                         <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
